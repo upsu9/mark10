@@ -3,16 +3,22 @@ body {
     background-color: cyan;
     margin: auto;
     align-items: center;
-    display: inline-block;
-    
+    display: flex;
+    flex-direction: column;
+
 }
 table{
     border-color: indigo;
     background-color: grey;
-    width: 50%;
+    width: 40%;
 }
 
 th,td{
     border-color: hotpink;
     border: 1px solid blueviolet;
+}
+
+.msg{
+    background-color: red;
+    color: black;
 }
