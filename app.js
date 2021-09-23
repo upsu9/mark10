@@ -3,19 +3,27 @@ var btnBill = document.querySelector(".btnBill")
 var inputCash = document.querySelector(".inputCash")
 var btnCash = document.querySelector(".btnCash")
 var msg = document.querySelector(".msg")
-var noOfNotes = document.querySelector(".noOfNotes")
+var noOfNotes = document.querySelectorAll(".noOfNotes")
+var nextDiv = document.querySelector(".nextDiv")
+var emsg = document.querySelector(".emsg")
+var clearBtn = document.querySelector(".clearBtn")
+
+hideDiv(nextDiv);
 
 
-btnBill.addEventListener("click", balanceAmount)
+
+btnBill.addEventListener("click", clickHandler)
 btnCash.addEventListener("click", checkNotes)
 
-
-
-function balanceAmount() {
+function clickHandler() {
     var bill = Number(inputBill.value);
     if (bill < 0 || bill == 0 || bill == "") {
-        showMessage("you need to put more than zero");
+        errorMsg("you need to put more than zero");
+        showDiv (msg, "block")
+       
+
     } else {
+        showDiv(nextDiv, "block")
         return bill;
     }
 }
@@ -48,13 +56,37 @@ function remainBal(cashGiven) {
 }
 
 
+function errorMsg(message) {
+    emsg.style.display = "block";
+    emsg.innerText = message;
 
-function hideMessage() {
-    msg.display.style = "none"
 }
+
 
 function showMessage(message) {
     msg.style.display = "block";
     msg.innerText = message;
 
+}
+
+
+function hideDiv(input) {
+    input.style.display = "none";
+}
+
+function showDiv(input, type){
+    input.style.display = type;
+
+}
+
+clearBtn.addEventListener("click", clearEverything)
+function clearEverything (){
+    inputBill.value = "";
+    inputCash.value = "";
+    for (i = 0; i < weHaveNotes.length; i++) {
+    noOfNotes[i].innerText = "";
+    }
+    showMessage("");
+    errorMsg("");
+    /* hideDiv(errorMsg("")); */
 }
