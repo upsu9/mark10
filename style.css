@@ -1,0 +1,18 @@
+
+body {
+    background-color: cyan;
+    margin: auto;
+    align-items: center;
+    display: inline-block;
+    
+}
+table{
+    border-color: indigo;
+    background-color: grey;
+    width: 50%;
+}
+
+th,td{
+    border-color: hotpink;
+    border: 1px solid blueviolet;
+}
