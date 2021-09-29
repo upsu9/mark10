@@ -5,24 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mark</title>
+    <title>Cash Registor!</title>
+    <link rel = "icon" href = 
+    "https://svgshare.com/i/abA.svg" 
+            type ="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 class="sidebarbanner">CASH REGISTER APPLICATION</h1>
-    <main>
-        <h2>This application helps user to get the change for given Bill amount. it is same as when any Big Bazaar bill
-            counter display</h2>
-        <p>Bill Amount</p>
-        <input class="inputBill" type="number" />
-        <button class="btnBill">Next</button>
-        <p class="emsg"></p>
-        <div class="nextDiv" ><p>Cash Given</p>
-            <input class="inputCash" type="number" />
-            <button class="btnCash">Check!</button>
-            <p class="msg"></p>
-            <table class="notesTable">
+
+    <nav class="nav1 container">
+        <div class='navbrand'> UPS : The Developer</div>
+        <div class='nav2'>
+            <ul class='nav3'>
+                <li class='link3 '><a class='link4' href="https://uday-pratap.netlify.app/index.html">HOME</a>
+
+                </li>
+                <li class='link3'><a class='link4 link5 pointer' href="https://uday-pratap.netlify.app/project.html">PROJECTS</a></li>
+                </li>
+                <li class='link3'><a class='link4' href="https://uday-pratap.netlify.app/blog.html">BLOGS</a></li>
+                <li class='link3'><a class='link4' href="https://uday-pratap.netlify.app/contact.html">CONTACT US</a></li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <h2 class="head" > CASH<span class="header-color">  REGISTER!</span></h2>
+
+
+
+
+    <main class= "center">
+       
+        <p style="font-size: larger; font-weight: bolder;">Bill Amount</p>
+        <input class="inputBill margin" type="number" />
+        <button class="btnBill ">Next !</button>
+        <p style="font-size: larger; font-weight: bolder;" class="emsg margin"></p>
+        <div class="nextDiv " >
+            <p style="font-size: larger; font-weight: bolder;">Cash Given</p>
+            <input class="inputCash " type="number" />
+            <button class="btnCash margin">Check!</button>
+            <p class="msg margin"></p>
+            <table class="notesTable ">
                 <tr>
                     <th>
                         Notes Denomination
@@ -101,7 +128,39 @@
             </table>
             <button class= "clearBtn"> Clear!</button>
         </div>
+        <p class="sec2 container container-center" style="color:var(--primary-color)" >About the App: This application helps user to get the change in multiple denomination for given Bill amount.</P>
+    
+
     </main>
+
+
+    <footer class= "footers" style="background-color:#5383ca ;">
+
+        <div  class= "make-center" style="color:white ;"
+        >Social media links</div>
+
+        <ul >
+            <li  class= "non-bullets">
+                <a class= "text-color" style="color:white ;" href="https://www.instagram.com/u_p_singhh/">Instagram</a>
+
+
+            </li>
+            <li class= "non-bullets">
+
+                <a class= "text-color"  style="color:white ;"href="https://www.linkedin.com/in/uday-pratap-a51a7569/">linkedin</a>
+
+            </li>
+            <li class= "non-bullets">
+
+                <a class= "text-color" style="color:white ;" href="https://github.com/upsu9">github</a>
+
+            </li>
+        </ul>
+    </footer>
+
+
+
+
     <script src="app.js" type="text/javascript"></script>
 </body>
 
