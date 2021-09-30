@@ -37,6 +37,7 @@ function checkNotes() {
         remainBal(cashGiven);
     } else {
 
+        if (cash < 0 || cash < bill || bill == cash ||cash === "")
         /*  if (bill > inputCash.value || bill === inputCash.value) { */
 
         showMessage("You need to give more cash OR No change shall be provided.");
